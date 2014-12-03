@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  home_player_id: 1
+  away_player_id: 1
+  date: 2014-12-03
+  winner: MyString
+
+two:
+  home_player_id: 1
+  away_player_id: 1
+  date: 2014-12-03
+  winner: MyString
