@@ -5,15 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Matchup.new([
-    {home_player_id: 1, away_player_id: 2, date: "2014-3-12", round_id:1 },
-{home_player_id: 3, away_player_id: 4, date: "2014-3-12", round_id:1},
-{home_player_id: 5, away_player_id: 6, date: "2014-3-12", round_id:1},
-{home_player_id: 7, away_player_id: 8, date: "2014-3-12", round_id:1},
-{home_player_id: 9, away_player_id: 10, date: "2014-3-12", round_id:1}
+Matchup.create([
+    {home_player_id: 1, away_player_id: 2, date: "2014-03-12", round_id:1, winner: "nil" },
+{home_player_id: 3, away_player_id: 4, date: "2014-03-12", round_id:1, winner: "nil"},
+{home_player_id: 5, away_player_id: 6, date: "2014-03-12", round_id:1, winner: "nil"},
+{home_player_id: 7, away_player_id: 8, date: "2014-03-12", round_id:1, winner: "nil"},
+{home_player_id: 9, away_player_id: 10, date: "2014-03-12", round_id:1, winner: "nil"}
 ])
 
-Player.new([
+Player.create([
     {name:"Isaac Weinbach", team: "Miami", description: "Baller", picture:"nil"},
     {name:"Anuvis Mejia", team: "New York", description: "Baller", picture:"nil"},
     {name:"Todd Metheny", team: "Los Angeles", description: "Baller", picture:"nil"},
@@ -27,6 +27,6 @@ Player.new([
 
 ])
 
-Round.new([
+Round.create([
     {name: "day 1"}
     ])
