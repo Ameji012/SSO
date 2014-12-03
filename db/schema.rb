@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141203202443) do
+ActiveRecord::Schema.define(version: 20141203234749) do
 
   create_table "matchups", force: true do |t|
     t.integer  "home_player_id"
@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(version: 20141203202443) do
   end
 
   create_table "scores", force: true do |t|
-    t.decimal  "score"
     t.date     "date"
+    t.decimal  "score"
     t.integer  "player_id"
     t.datetime "created_at"
     t.datetime "updated_at"
