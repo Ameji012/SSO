@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141203200433) do
+ActiveRecord::Schema.define(version: 20141203202443) do
 
   create_table "matchups", force: true do |t|
     t.integer  "home_player_id"
@@ -20,16 +20,24 @@ ActiveRecord::Schema.define(version: 20141203200433) do
     t.string   "winner"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "round_id"
   end
 
   add_index "matchups", ["away_player_id"], name: "index_matchups_on_away_player_id"
   add_index "matchups", ["home_player_id"], name: "index_matchups_on_home_player_id"
+  add_index "matchups", ["round_id"], name: "index_matchups_on_round_id"
 
   create_table "players", force: true do |t|
     t.string   "name"
     t.string   "team"
     t.text     "description"
     t.string   "picture"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "rounds", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
