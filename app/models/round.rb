@@ -1,3 +1,3 @@
 class Round < ActiveRecord::Base
-	has_many :match_ups
+	has_many :matchups
 end
