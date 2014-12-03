@@ -15,6 +15,7 @@
     <% @players.each do |player| %>
       <tr>
         <td><%= player.name %></td>
+        <td><%= player.team %></td>
         <td><%= player.description %></td>
         <td><%= player.picture %></td>
         <td><%= link_to 'Show', player %></td>
