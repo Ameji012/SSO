@@ -3,7 +3,17 @@
 <p>
   <strong>Name:</strong>
   <%= @round.name %>
-  <%= @round.find(1) %>
+ 
+ <% if @round.has_matchups? %>
+<h3>Match Ups:</h3>
+
+<ul>
+  <% @round.matchups.each do |matchups| %>
+  <li><%= matchups %></li>
+  <% end %>
+</ul>
+<% end %>
+
 </p>
 
 <%= link_to 'Edit', edit_round_path(@round) %> |
