@@ -4,7 +4,7 @@ class CreateMatchups < ActiveRecord::Migration
       t.integer :home_player_id
       t.integer :away_player_id
       t.date :date
-      t.string :winner
+      t.integer :winner_player_id
 
       t.timestamps
     end

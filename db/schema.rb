@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20141203234749) do
     t.integer  "home_player_id"
     t.integer  "away_player_id"
     t.date     "date"
-    t.string   "winner"
+    t.integer  "winner_player_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "round_id"

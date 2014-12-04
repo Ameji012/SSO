@@ -6,11 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Matchup.create([
-    {home_player_id: 1, away_player_id: 2, date: Date.today, round_id:1, winner: "nil" },
-{home_player_id: 3, away_player_id: 4, date:Date.today, round_id:1, winner: "nil"},
-{home_player_id: 5, away_player_id: 6, date: Date.today, round_id:1, winner: "nil"},
-{home_player_id: 7, away_player_id: 8, date: Date.today, round_id:1, winner: "nil"},
-{home_player_id: 9, away_player_id: 10, date: Date.today, round_id:1, winner: "nil"}
+    {home_player_id: 1, away_player_id: 2, date: Date.today, round_id:1, winner_player_id: nil },
+{home_player_id: 3, away_player_id: 4, date:Date.today, round_id:1, winner_player_id: nil},
+{home_player_id: 5, away_player_id: 6, date: Date.today, round_id:1, winner_player_id: nil},
+{home_player_id: 7, away_player_id: 8, date: Date.today, round_id:1, winner_player_id: nil},
+{home_player_id: 9, away_player_id: 10, date: Date.today, round_id:1, winner_player_id: nil}
 ])
 
 Player.create([
