@@ -5,6 +5,7 @@ class RoundsController < ApplicationController
   # GET /rounds.json
   def index
     @rounds = Round.all
+    @matchups = Matchup.all
   end
 
   # GET /rounds/1
@@ -15,6 +16,7 @@ class RoundsController < ApplicationController
   # GET /rounds/new
   def new
     @round = Round.new
+    @matchups = Matchup.new
   end
 
   # GET /rounds/1/edit
