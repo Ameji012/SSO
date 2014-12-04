@@ -6,11 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Matchup.create([
-    {home_player_id: 1, away_player_id: 2, date: "2014-03-12", round_id:1, winner: "nil" },
-{home_player_id: 3, away_player_id: 4, date: "2014-03-12", round_id:1, winner: "nil"},
-{home_player_id: 5, away_player_id: 6, date: "2014-03-12", round_id:1, winner: "nil"},
-{home_player_id: 7, away_player_id: 8, date: "2014-03-12", round_id:1, winner: "nil"},
-{home_player_id: 9, away_player_id: 10, date: "2014-03-12", round_id:1, winner: "nil"}
+    {home_player_id: 1, away_player_id: 2, date: Date.today, round_id:1, winner: "nil" },
+{home_player_id: 3, away_player_id: 4, date:Date.today, round_id:1, winner: "nil"},
+{home_player_id: 5, away_player_id: 6, date: Date.today, round_id:1, winner: "nil"},
+{home_player_id: 7, away_player_id: 8, date: Date.today, round_id:1, winner: "nil"},
+{home_player_id: 9, away_player_id: 10, date: Date.today, round_id:1, winner: "nil"}
 ])
 
 Player.create([
@@ -30,3 +30,16 @@ Player.create([
 Round.create([
     {name: "day 1"}
     ])
+
+Score.create([
+{date: Date.today, score: 30.8, player_id: 1},
+{date: Date.today, score: 40.5, player_id: 2},
+{date: Date.today, score: 6.2, player_id: 3},
+{date: Date.today, score: 3.1, player_id: 4},
+{date: Date.today, score: 4.5, player_id: 5},
+{date: Date.today, score: 30.8, player_id: 6},
+{date: Date.today, score: 40.5, player_id: 7},
+{date: Date.today, score: 6.2, player_id: 8},
+{date: Date.today, score: 3.1, player_id: 9},
+{date: Date.today, score: 4.5, player_id: 10}
+])

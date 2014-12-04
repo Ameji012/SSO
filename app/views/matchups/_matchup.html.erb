@@ -1,5 +1,8 @@
 <%= div_for matchup do %>
+<%= time_tag matchup.date %>
+<%= matchup.home_player.scores.find_by(date:matchup.date).try(:score) %>
 <%= matchup.home_player.name %>
 VS
+<%= matchup.away_player.scores.find_by(date:matchup.date).try(:score) %>
 <%= matchup.away_player.name %>
 <% end %>
